@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La Fortaleza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="inicio">
+
+    <header>
+        <!-- 1. Título con el logo -->
+        <h1 class="logo">
+            <img src="img/logo-caballo.jpg" alt="Logo Caballo" class="logo-img">
+            <span>La Fortaleza</span>
+        </h1>
+        
+        <!-- 2. Botón de hamburguesa -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button> 
+        
+        <!-- 3. Menú de navegación -->
+        <nav id="menuNav">
+            <a href="#inicio">Inicio</a>
+            <a href="#cabalgatas">Cabalgatas</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+<main>
+
+    <!-- ======== fotos de carrucel ======== -->
+    <section id="inicio" class="hero-carrusel">
+        
+        <div class="diapositivas">
+            <img src="img/foto carrucel1.jpeg" class="diapositiva activa" alt="Paisaje de cabalgata 1">
+            <img src="img/foto carrucel2.jpeg" class="diapositiva" alt="Paisaje de cabalgata 2">
+            <img src="img/foto carrucel 3.jpeg" class="diapositiva" alt="Paisaje de cabalgata 3">
+        </div>
+        
+        <div class="capa-oscura"></div>
+        
+        <div class="hero-contenido">
+            <h2>Vive la mejor experiencia a caballo</h2>
+            <p>Conecta con la naturaleza en un recorrido inolvidable</p>
+            <a href="#cabalgatas" class="btn-reserva">Ver paquetessssss</a>
+        </div>
+        
+    </section>
+        <section class="cabalgatas" id="cabalgatas">
+
+            <h2>Nuestras cabalgatas</h2>
+
+            <div class="tarjetas">
+
+                <article class="tarjeta">
+
+                    <img src="img/primerafoto.jpeg" alt="Cabalgata por la naturaleza">
+
+                    <h3>Cabalgata ecológica</h3>
+
+                    <p class="info-cabalgata">
+                       Duración: 2 horas<br>
+                       <span class="precio">Precio: $80.000 por persona</span>
+                    </p>
+
+                   <button class="btnReserva" data-cabalgata="Cabalgata ecológica">
+                    Reservar cabalgata
+                   </button>
+
+                </article>
+
+                <article class="tarjeta">
+
+                    <img src="img/segundafoto.jpeg" alt="Paseo a caballo">
+
+                    <h3>Paseo a caballo</h3>
+
+                    <p class="info-cabalgata">
+                      Duración: 1 hora<br>
+                      <span class="precio">Precio: $50.000 por persona</span>
+                    </p>
+
+                  <button class="btnReserva" data-cabalgata="Paseo a caballo">
+                   Reservar cabalgata
+                  </button>
+
+                </article>
+
+                <article class="tarjeta">
+
+                    <img src="img/tercerafoto.jpeg" alt="Experiencia de cabalgata">
+
+                    <h3>Experiencia completa</h3>
+
+                    <p class="info-cabalgata">
+                     Duración: 3 horas<br>
+                     <span class="precio">Precio: $200.000 por persona</span>
+                    </p>
+
+              <button class="btnReserva" data-cabalgata="Experiencia completa">
+                    Reservar cabalgata
+              </button>
+
+                </article>
+
+                       </div>
+
+        </section>
+        <!-- SECCIÓN DE TESTIMONIOS -->
+        <section class="testimonios" id="testimonios">
+            <h2>🐴Lo que dicen nuestros jinetes 🐴</h2>
+            
+            <div class="contenedor-testimonios">
+                <article class="testimonio">
+                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                    <p class="texto-testimonio">"Una experiencia increíble. Los paisajes son hermosos y los caballos muy dóciles. ¡Súper recomendado!"</p>
+                    <p class="cliente">- Camila R.</p>
+                </article>
+
+                <article class="testimonio">
+                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                    <p class="texto-testimonio">"Fui con mi familia y nos encantó. El guía fue muy amable y el recorrido ecológico vale cada peso."</p>
+                    <p class="cliente">- Andrés M.</p>
+                </article>
+
+                <article class="testimonio">
+                    <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                    <p class="texto-testimonio">"La experiencia completa de 3 horas te desconecta de la ciudad por completo. Excelente servicio y atención."</p>
+                    <p class="cliente">- Valentina G.</p>
+                </article>
+            </div>
+        </section>
+        <section class="galeria" id="galeria">
+
+    <h2>Galería</h2>
+
+    <div class="fotos">
+
+        <img src="img/primerafoto.jpeg" alt="Caballo en la naturaleza">
+
+        <img src="img/segundafoto.jpeg" alt="Paseo a caballo">
+
+        <img src="img/tercerafoto.jpeg" alt="Experiencia de cabalgata">
+
+        <img src="img/foto fondo don edier y su esposa.jpeg" alt="Caballos en el campo">
+
+        <img src="img/cuarta fotoo.jpeg" alt="Caballos en el campoo">
+
+    </div>
+
+
+        <section class="contacto" id="contacto">
+
+    <h2>Reserva tu cabalgata</h2>
+
+    <p>Completa tus datos y nos pondremos en contacto contigo.</p>
+    <p class="datos-contacto">
+    También puedes comunicarte con nosotros directamente por WhatsApp 55555.
+</p>
+
+    <form id="formReserva">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="personas">Número de personas:</label>
+        <input type="number" id="personas" min="1" max="10" required>
+
+        <label for="tipoCabalgata">Cabalgata:</label>
+        <select id="tipoCabalgata" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Cabalgata ecológica">Cabalgata ecológica</option>
+            <option value="Paseo a caballo">Paseo a caballo</option>
+            <option value="Experiencia completa">Experiencia completa</option>
+        </select>
+
+        <button type="submit">Solicitar reserva</button>
+
+    </form>
+<a
+    class="btnWhatsApp"
+    href="https://wa.me/573001547544"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Escríbenos por WhatsApp
+</a>
+</section>
+
+    </main>
+<footer>
+    <p>© 2026 Cabalgatas. Todos los derechos reservados.</p>
+    <p>Disfruta la naturaleza a caballo.</p>
+</footer>
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573001547544" class="whatsapp-flotante" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+        <svg viewBox="0 0 24 24" width="35" height="35" fill="white">
+            <path d="M12.031 0C5.383 0 0 5.383 0 12.032c0 2.12.553 4.146 1.603 5.946L.041 24l6.19-1.625A11.96 11.96 0 0012.031 24c6.648 0 12.03-5.383 12.03-12.032S18.679 0 12.031 0zm-1.01 19.336a9.924 9.924 0 01-5.187-1.464l-.372-.22-3.856 1.012 1.03-3.763-.241-.383a9.948 9.948 0 01-1.522-5.305c0-5.503 4.478-9.98 9.982-9.98 5.503 0 9.98 4.477 9.98 9.98s-4.477 9.98-9.98 9.98z"/>
+            <path d="M17.438 14.152c-.276-.138-1.636-.807-1.89-.90-.253-.092-.438-.138-.621.138-.184.276-.714.9-.875 1.084-.16.184-.322.207-.599.07-.276-.138-1.168-.431-2.226-1.372-.823-.733-1.378-1.638-1.539-1.915-.161-.276-.017-.425.121-.563.125-.124.276-.322.414-.483.138-.161.184-.276.276-.46.092-.184.046-.345-.023-.483-.069-.138-.621-1.5-.851-2.053-.225-.538-.454-.465-.621-.473h-.53c-.23 0-.598.092-.911.414-.313.322-1.196 1.168-1.196 2.846 0 1.678 1.22 3.302 1.392 3.532.172.23 2.414 3.684 5.845 5.166 3.431 1.482 3.431.99 4.075.92.644-.07 2.072-.847 2.37-1.664.299-.817.299-1.519.207-1.664-.092-.145-.322-.23-.598-.368z"/>
+        </svg>
+    </a>
+    <!-- CAJA OSCURA PARA LA GALERÍA -->
+    <div id="modalGaleria" class="modal">
+        <span class="cerrar-modal" id="cerrarModal">&times;</span>
+        <img class="modal-contenido" id="imgModal" alt="Foto ampliada">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

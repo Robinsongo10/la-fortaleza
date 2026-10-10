@@ -1,0 +1,739 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f5f1e8;
+    color: #2d241f;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between; /* Esto es la magia: logo a la izquierda, menú a la derecha */
+    align-items: center; /* Centra todo verticalmente para que no se vea chueco */
+    padding: 15px 30px; /* Da un poco de aire a los lados */
+    background-color: #3b2a20; /* (Pon aquí el color de fondo oscuro que tenías) */
+}
+
+/* El código que ya tenías para el logo (asegúrate de que el texto sea blanco) */
+.logo {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    margin: 0; 
+    color: white; /* Letras blancas para que contrasten */
+}
+
+.logo-img {
+    height: 50px; 
+    width: auto;  
+    border-radius: 6px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 5px;
+}
+.hero {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("img/paisaje.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+button {
+    background-color: #8b5e3c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6f472c;
+}
+.cabalgatas {
+    padding: 80px 30px;
+    text-align: center;
+    /* Cargar la imagen con una capa semitransparente beige encima */
+    background-image: 
+        linear-gradient(rgba(245, 241, 232, 0.5) 0%, rgba(245, 241, 232, 0.5) 75%, rgba(245, 241, 232, 1) 100%), 
+        url("img/fondo-cabalgatas.jpg");
+    /* Ajustes para que cubra todo el fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Esto da un efecto genial al hacer scroll */
+}
+
+/* Sombreado para que el título resalte sobre el fondo */
+.cabalgatas h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #3b2a20;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9);
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.tarjeta {
+    width: 300px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+    display: flex;
+flex-direction: column;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta h3 {
+    font-size: 22px;
+    margin: 25px 15px 10px;
+    color: #3b2a20;
+    font-weight: 700;
+}
+
+.tarjeta p {
+    padding: 0 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #4a4039;
+    font-size: 16px;
+}
+
+.tarjeta button {
+    margin: 20px auto 25px;
+    width: 85%;
+    margin-top: auto;
+    margin-left: auto;
+margin-right: auto;
+}
+@media (max-width: 768px) {
+
+    .tarjeta button {
+        width: 90%;
+    }
+
+    .precio {
+        font-size: 17px;
+        padding: 5px 8px;
+    }
+
+.info-cabalgata {
+    font-size: 14px;
+}
+.tarjeta p {
+    font-size: 15px;
+}
+
+
+
+    .hero {
+        min-height: 500px;
+        padding: 30px 20px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+        max-width: 350px;
+    } 
+    .galeria {
+        padding: 50px 20px;
+    }
+
+    .galeria h2 {
+        font-size: 30px;
+    }
+
+    .fotos img {
+        width: 90%;
+        max-width: 350px;
+        height: 220px;
+    }
+
+    .contacto {
+        padding: 50px 20px;
+    }
+
+    .contacto h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+    }
+
+.galeria {
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #3b2a20;
+    font-weight: 700;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.fotos img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.14);
+}
+.contacto {
+    padding: 80px 30px;
+    text-align: center;
+    background-color: #e8dfd0;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #3b2a20;
+    font-weight: 700;
+}
+
+.contacto p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 10px auto;
+    color: #4a4039;
+}
+
+.contacto button {
+    margin-top: 25px;
+}
+.tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+}
+.tarjeta img {
+    transition: transform 0.4s ease;
+}
+
+.tarjeta:hover img {
+    transform: scale(1.05);
+}
+footer {
+    background-color: #3b2a20;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d8a66a;
+}
+.info-cabalgata {
+    font-weight: bold;
+    color: #6f472c;
+    margin: 15px 20px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+#formReserva {
+    max-width: 500px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#formReserva button {
+    width: 100%;
+    margin-top: 25px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#formReserva button:hover {
+    transform: translateY(-3px);
+    background-color: #6f472c;
+}
+
+#formReserva label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #3b2a20;
+}
+
+#formReserva input,
+#formReserva select {
+    padding: 12px;
+    border: 1px solid #c8b9a6;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#formReserva input:focus,
+#formReserva input:hover,
+#formReserva select:hover {
+    border-color: #8b5e3c;
+}
+#formReserva select:focus {
+    outline: none;
+    border-color: #8b5e3c;
+    box-shadow: 0 0 0 3px rgba(139, 94, 60, 0.15);
+}
+/*las fotos de la galería tendrán un efecto de transición suave al pasar el cursor sobre ellas, aumentando ligeramente su tamaño y agregando una sombra para dar un efecto de profundidad y resaltar la imagen*/
+.fotos img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fotos img:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.datos-contacto {
+    font-size: 16px;
+    font-style: italic;
+}
+.btnWhatsApp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btnWhatsApp:hover {
+    transform: translateY(-3px);
+    background-color: #1ebe5d;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+.contacto form {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+/*medidas de estilo para pantallas pequeñas, asegurando que el formulario de reserva y sus campos se ajusten al ancho de la pantalla y sean fáciles de usar en dispositivos móviles*/
+@media (max-width: 600px) {
+
+    #formReserva {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #formReserva input,
+    #formReserva select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #formReserva button {
+    width: 100%;
+}
+
+.btnWhatsApp {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+}
+.precio {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 6px 10px;
+    background-color: #f5f1e8;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #3b2a20;
+}
+footer p:first-child {
+    font-weight: bold;
+}
+nav a:focus {
+    outline: 3px solid #d8a66a;
+    outline-offset: 3px;
+}
+button:focus {
+    outline: 3px solid #d8a66a;
+    outline-offset: 3px;
+}
+#formReserva input:focus,
+#formReserva select:focus {
+    outline: 3px solid #d8a66a;
+    outline-offset: 2px;
+}
+section {
+    scroll-margin-top: 90px;
+}
+.btnReserva {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btnReserva:hover {
+    transform: translateY(-3px);
+    background-color: #6f472c;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+#tipoCabalgata.resaltado {
+    border-color: #8b5e3c;
+    box-shadow: 0 0 0 4px rgba(139, 94, 60, 0.2);
+}
+/* 1. Ocultar el botón en pantallas de computadora */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: white;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle:hover {
+    background: transparent;
+}
+
+/* 2. Modificar el diseño para celulares */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; 
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+
+    nav {
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #3b2a20; 
+    }
+
+    /* ESTA ES LA PARTE MAGICA QUE LO HACE APARECER */
+    nav.activa {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        margin: 0;
+        padding: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    }
+}
+/* ================================ */
+/* BOTÓN FLOTANTE DE WHATSAPP       */
+/* ================================ */
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegura que siempre esté por encima de todo */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-flotante:hover {
+    transform: scale(1.1) translateY(-5px);
+    background-color: #1ebe5d;
+}
+
+/* Hacerlo un poco más pequeño en celulares */
+@media (max-width: 768px) {
+    .whatsapp-flotante {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .whatsapp-flotante svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+/* ================================ */
+/* SECCIÓN DE TESTIMONIOS           */
+/* ================================ */
+.testimonios {
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.testimonios h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #3b2a20;
+    font-weight: 700;
+}
+
+.contenedor-testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonio {
+    background-color: white;
+    width: 300px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.estrellas {
+    font-size: 22px;
+    margin: 0 0 15px 0;
+}
+
+.texto-testimonio {
+    font-style: italic;
+    color: #4a4039;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cliente {
+    font-weight: bold;
+    color: #8b5e3c;
+    font-size: 17px;
+    margin: 0;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+    .testimonio {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+/* ================================ */
+/* EFECTO AMPLIACIÓN DE FOTOS       */
+/* ================================ */
+.fotos img {
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); 
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease; 
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cerrar-modal:hover {
+    color: #d8a66a; 
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+/* ================================ */
+/* CARRUSEL DE PORTADA              */
+/* ================================ */
+.hero-carrusel {
+    position: relative;
+    height: 80vh; /* Altura de la portada (ocupa el 80% de la pantalla) */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.diapositivas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.diapositiva {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita que la foto se deforme */
+    opacity: 0; /* Oculta todas las fotos por defecto */
+    transition: opacity 1.5s ease-in-out; /* Efecto de desvanecimiento suave */
+}
+
+.diapositiva.activa {
+    opacity: 1; /* Solo muestra la foto que tenga la clase 'activa' */
+}
+
+.capa-oscura {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Oscurece un poco las fotos */
+    z-index: 2;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 3; /* Asegura que el texto esté por encima de las fotos */
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-contenido h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.hero-contenido p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.btn-reserva {
+    background-color: #25D366; 
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.btn-reserva:hover {
+    transform: scale(1.05);
+}
