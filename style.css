@@ -737,3 +737,32 @@ section {
 .btn-reserva:hover {
     transform: scale(1.05);
 }
+/* ================================ */
+/* SECCIÓN DE UBICACIÓN Y MAPA      */
+/* ================================ */
+.ubicacion {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f4ece4; /* Un tono crema suave que combina con los caballos */
+}
+
+.ubicacion h2 {
+    color: #8b5e3c;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.mapa-contenedor {
+    max-width: 900px;
+    margin: 30px auto 0; /* Centra el mapa */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Sombrita elegante */
+}
+
+/* Esto asegura que el mapa de Google ocupe el 100% del contenedor */
+.mapa-contenedor iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
