@@ -741,28 +741,24 @@ section {
 /* SECCIÓN DE UBICACIÓN Y MAPA      */
 /* ================================ */
 .ubicacion {
-    text-align: center;
+    text-align: center; 
     padding: 60px 20px;
-    background-color: #f4ece4; /* Un tono crema suave que combina con los caballos */
+    background-color: #f4ece4; 
 }
-
 .ubicacion h2 {
     color: #8b5e3c;
     font-size: 32px;
     margin-bottom: 10px;
 }
-
 .mapa-contenedor {
-    max-width: 900px;
-    margin: 30px auto 0; /* Centra el mapa */
-    border-radius: 12px;
+    max-width: 900px; 
+    margin: 30px auto 0; 
+    border-radius: 15px; 
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Sombrita elegante */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
 }
-
-/* Esto asegura que el mapa de Google ocupe el 100% del contenedor */
 .mapa-contenedor iframe {
-    width: 100%;
+    width: 100% !important; 
     height: 450px;
     border: none;
 }
